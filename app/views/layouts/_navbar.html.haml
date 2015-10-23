@@ -1,0 +1,25 @@
+.navbar-fixed
+  %nav.blue.z-depth-4
+    .nav-wrapper
+      %a.brand-logo.center{:href => "/"} Caleb Schade
+      %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
+        %i.material-icons menu
+      %ul#nav-mobile.right.hide-on-med-and-down
+        %li.white-text
+          = link_to 'Home', root_path
+        %li.white-text
+          = link_to 'About', about_path 
+        %li.white-text
+          = link_to 'Education', education_path
+        %li.white-text
+          = link_to 'Work History', work_path
+      %ul#mobile-demo.side-nav
+        %li.white-text
+          = link_to 'Home', root_path
+        %li.white-text
+          = link_to 'About', about_path 
+        %li.white-text
+          = link_to 'Education', education_path
+        %li.white-text
+          = link_to 'Work History', work_path
+        
